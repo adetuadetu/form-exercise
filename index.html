@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <h3>Form Exercise</h3>
+        <!-- Task 1 -->
+        <div class="task">
+            <label for="text">Enter text here</label>
+            <input type="text" name="text" id="text" placeholder="enter text here" minlength="2" required>
+            <input type="submit" name="submit" id="submit">
+        </div>
+
+        <!-- Task 2 -->
+        <div class="task">
+            <fieldset>
+                <legend>Radio Button</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="diverse" name="gender" value="diverse" required>
+                    <label for="diverse">Diverse</label>
+                </div>
+
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </div>
+
+        <!-- Task-3 -->
+        <div class="task">
+            <label for="animals">Choose an Animal</label>
+            <select name="animals" id="animals" required>
+                <option value="">Please select an option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+            </select>
+            <input type="submit" name="animal-submit" id="animal-submit">
+        </div>
+
+        <!-- Task-4 -->
+        <div class="task">
+            <fieldset>
+                <legend>Check one option</legend>
+                <div>
+                    <input type="checkbox" id="yes" name="yes" required>
+                    <label for="yes">Yes</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="no" name="no">
+                    <label for="no">No</label>
+                </div>
+
+                <input type="submit">
+            </fieldset>
+        </div>
+
+        <!-- Task-5 -->
+        <div class="task">
+            <label for="discription">Why did you select your animal in at least 50 charaters</label>
+            <textarea name="discription" id="discription" cols="30" rows="10" placeholder="Enter why here" minlength="50" required></textarea>
+            <input type="submit">
+        </div>
+    </form>
+    <pre id="log"></pre>
+</body>
+<script type="module" src="./main.js" ></script>
+</html>
